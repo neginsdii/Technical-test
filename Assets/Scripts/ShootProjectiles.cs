@@ -43,11 +43,10 @@ public class ShootProjectiles : MonoBehaviour
         if (ind>=0)
 		{
             isFiring = true;
+            Bullets[ind].SetActive(true);
             Bullets[ind].transform.position = transform.position;
             Bullets[ind].transform.rotation = transform.rotation;
-            Bullets[ind].GetComponent<Bullet>().direction = transform.forward;
-
-            Bullets[ind].SetActive(true);
+            Bullets[ind].GetComponent<Bullet>().direction = camera.transform.forward;
             Invoke(nameof(cancelFiring), shootingCoolDown);
 		}
 	}

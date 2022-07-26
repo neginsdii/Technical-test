@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour
 		transform.position += direction * Speed;
 	}
 
-	private void OnCollisionEnter(Collision collision)
+	private void OnTriggerEnter(Collider collision)
 	{
 		if(collision.gameObject.CompareTag("target"))
 		{
