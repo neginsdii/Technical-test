@@ -81,13 +81,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2760}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 33050}
+      Script: {instanceID: 3630}
     - Class: 114
-      Script: {instanceID: 33838}
+      Script: {instanceID: 3870}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,7 +225,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 42f2fd864d4927879a3ff8afc733e2b2
+      Hash: f0a039b10dc2fd560aef4b867469a7a1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeleportPlayer
@@ -357,6 +357,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 0d3f4233a130355d3b74b54aeb047ea5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootProjectiles
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -445,6 +451,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 97d92f4b5db2808bef82370cb4e52d3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -541,18 +553,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 0d3f4233a130355d3b74b54aeb047ea5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShootProjectiles
-  - hash:
-      serializedVersion: 2
-      Hash: 97d92f4b5db2808bef82370cb4e52d3d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Bullet
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

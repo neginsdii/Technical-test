@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b17edf9a7498894db781d5682cf4cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingCoolDown: 0.2
+  shootingCoolDown: 0.4
   NumberOfBullets: 10
   isFiring: 0
   bulletPrefab: {fileID: 1118387181873171593, guid: a6b115f20bfff3245ae11d09209a0532, type: 3}
@@ -533,7 +533,7 @@ MonoBehaviour:
   Pointer: {fileID: 1923028835}
   hitPoint: {fileID: 820250553}
   SpawnObjectPrefab: {fileID: 2544603775970332531, guid: 72e3f343a7bf48540bd234552d071999, type: 3}
-  SpawnedObjectParent: {fileID: 0}
+  SpawnedObjectParent: {fileID: 1681617479}
   destroydelayTime: 0.5
   ChangeColorButton: {fileID: 754824066}
   DestroySpawnedObjectsButton: {fileID: 1432575264}
@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 820250557}
   - component: {fileID: 820250556}
   - component: {fileID: 820250555}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HitPoint
   m_TagString: Block
   m_Icon: {fileID: 0}

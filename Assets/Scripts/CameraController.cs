@@ -25,6 +25,6 @@ public class CameraController : MonoBehaviour
 	{
         InputVector += new Vector2(-Input.GetAxisRaw("Mouse Y")* MouseSensivityX, Input.GetAxisRaw("Mouse X")*MouseSensivityY);
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Mathf.Clamp(InputVector.x,-45,45), InputVector.y, 0),Time.deltaTime*10);
-        player.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, InputVector.y, 0), 1.0f);
+        player.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, InputVector.y, 0), 1);
     }
 }

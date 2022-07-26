@@ -1,3 +1,14 @@
+///----------------------------------------------------------------------------------
+///  Bullet.cs
+///  Description       : Is attached to Bullet prefabs.
+///						 Once the clone bullet is activated, moves the bullet to the
+///						 given direction. 
+///						 Deactivates the bullet and destorys the spawnObjects if it
+///						 collides with the spawnd objects.
+///						 Deactivates the bullet if the distance from starting points 
+///						 is greater than a specific amount
+///----------------------------------------------------------------------------------
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,7 +40,7 @@ public class Bullet : MonoBehaviour
 	{
 		if(collision.gameObject.CompareTag("target"))
 		{
-			collision.gameObject.SetActive(false);
+			Object.Destroy(collision.gameObject);
 		}
 		gameObject.SetActive(false);
 	}

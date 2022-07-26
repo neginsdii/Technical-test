@@ -1,3 +1,8 @@
+///----------------------------------------------------------------------------------
+///  ShootProjectil.cs
+///  Description       : Is attached to BulletSpawnPoint gameObject in the scene.
+///						 Creates a list of Bullets to reuse them.
+///----------------------------------------------------------------------------------
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,8 +35,9 @@ public class ShootProjectiles : MonoBehaviour
             Fire();
 		}
     }
-
-     private void Fire()
+    // Finds an inactinve bullet and sets the position and direction of the bullet
+    // based on the gameobject transforms
+    private void Fire()
 	{
         int ind = FindBullet();
         if (ind>=0)
@@ -45,7 +51,8 @@ public class ShootProjectiles : MonoBehaviour
             Invoke(nameof(cancelFiring), shootingCoolDown);
 		}
 	}
-   
+    // Iterates through the list of bullets and find a disabled bullet.
+    // retruns -1 if doesn't find anything
     private int FindBullet()
 	{
         for (int i = 0; i < NumberOfBullets; i++)
